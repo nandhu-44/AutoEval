@@ -46,3 +46,41 @@ The helper functions are downloaded from Daniel Bourke's PyTorch repository:
 ```bash
 https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/helper_functions.py
 ```
+
+## Evaluation
+
+### Imports and Setup
+
+Required libraries are imported, and the device is configured (CUDA or CPU).
+
+### Function Definitions
+
+* `MaxResize`: Resizes images while maintaining aspect ratio.
+* `box_cxcywh_to_xyxy and rescale_bboxes`: For bounding box processing.
+* `outputs_to_objects`: Converts model outputs to objects.
+* `fig2img`: Converts a Matplotlib figure to a PIL Image.
+* `visualize_detected_tables`: Visualizes detected tables with bounding boxes.
+* `objects_to_crops`: Processes bounding boxes into cropped images and tokens.
+* `get_cell_coordinates_by_row`: Extracts cell coordinates by row.
+
+### Model Configuration
+
+Loads pre-trained models for table detection and structure recognition.
+
+### Model Definition
+
+TinyVGG: A neural network model used for classification of cell contents.
+The model is instantiated and loaded with pre-trained weights.
+
+### Dataset Preparation
+
+Reads correct answers from `ModelAnswer.csv` and sets up the evaluation dataset folder.
+
+### Cell Extraction and Classification
+
+`perform_extraction_and_classify_image` : Main function to extract table cells and classify their contents.
+
+### Runner Code
+
+Iterates through images, performs extraction and classification, and saves results to `marks.csv`.
+
