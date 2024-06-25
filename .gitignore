@@ -1,0 +1,12 @@
+# Python Config files
+__pycache__
+.venv/
+
+# Editor config files
+.vscode/
+
+# data/Sample_Data is where the oringial dataset is extracted
+data/
+
+# dataset/ is the folder where the cells are extracted and classified for training the model
+dataset/
