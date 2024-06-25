@@ -10,3 +10,9 @@ data/
 
 # dataset/ is the folder where the cells are extracted and classified for training the model
 dataset/
+
+# evaluation data
+evaluation-data/
+
+# Zip files
+*.zip
