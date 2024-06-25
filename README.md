@@ -3,10 +3,11 @@
 ## TableTransformer - Dataset Extractor
 
 ### Getting Started
+- First install pytorch with cuda from the [pytorch](https://pytorch.org/get-started/locally/) website.
 
-Ensure all required libraries are installed. You can install them using pip:
+- Ensure all required libraries are installed. You can install them using pip:
 ```bash
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Usage
