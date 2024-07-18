@@ -16,3 +16,11 @@ evaluation-data/
 
 # Zip files
 *.zip
+
+# Test files
+test/
+*.test.*
+
+# API checking and response files
+sample-api-checking/
+uploads/
